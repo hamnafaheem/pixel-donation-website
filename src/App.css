@@ -1,38 +1,153 @@
-.App {
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #4b6cb7, #182848);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+}
+
+.btn-primary, .btn-secondary {
+  margin-right: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.progress {
+  height: 30px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mb-4 {
+  margin-bottom: 1.5rem !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.alert {
+  margin-top: 20px;
+}
+
+.text-danger {
+  color: #0c0950;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .progress {
+    height: 25px;
+    font-size: 1rem;
   }
 }
+
+
+
+/* Glass effect */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary, .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.progress {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+  background-color: #6c757d; /* Adjust progress bar color */
+}
+
+.progress-bar-striped {
+  background-color: #007bff; /* Adjust striped progress bar color */
+}
+
+.progress-bar-animated {
+  background-color: #0056b3; /* Adjust animated progress bar color */
+}
+
+.alert {
+  background-color: rgba(4, 25, 49, 0.2); /* Adjust success alert background color */
+  color: #c8ccd0; /* Adjust success alert text color */
+  border-color: rgba(2, 11, 20, 0.3); /* Adjust success alert border color */
+}
+
+.alert-danger {
+  background-color: rgba(255, 0, 0, 0.2); /* Adjust error alert background color */
+  color: #dc3545; /* Adjust error alert text color */
+  border-color: rgba(255, 0, 0, 0.3); /* Adjust error alert border color */
+}
+
+.text-error {
+  color: #091e5d; /* Adjust error message color */
+}
+
